@@ -57,6 +57,6 @@ export default defineComponent({
 ``` 
 
 ## Issue
-It may not work by importing, if that's the case, just copy the src folder to your local folder, then import it locally.
+**It may not work by npm importing, if that's the case, just copy the src folder to your local folder, then import it locally.**
 
 If you know how to solve that problem, feel free to contact me.
