@@ -64,6 +64,25 @@ const baseConfig = {
       exclude: 'node_modules/**',
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.vue'],
       babelHelpers: 'bundled',
+      presets: [
+        [
+          "@babel/preset-env",
+          {
+            "targets": {
+              "browsers":  [
+                "last 1 version",
+                "> 1%",
+                "IE 6"
+              ]
+            },
+            "loose": true,
+            "modules": false,
+            "useBuiltIns": false,
+            debug: true
+          }
+        ],
+        "@babel/preset-typescript"
+      ]
     },
   },
 };
